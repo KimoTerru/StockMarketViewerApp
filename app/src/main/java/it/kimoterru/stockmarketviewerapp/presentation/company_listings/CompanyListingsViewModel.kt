@@ -10,7 +10,6 @@ import it.kimoterru.stockmarketviewerapp.domain.repository.StockRepository
 import it.kimoterru.stockmarketviewerapp.util.Resource
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
