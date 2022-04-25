@@ -13,8 +13,8 @@ import it.kimoterru.stockmarketviewerapp.domain.repository.StockRepository
 import it.kimoterru.stockmarketviewerapp.util.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import okio.IOException
 import retrofit2.HttpException
+import java.io.IOException
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -45,7 +45,6 @@ class StockRepositoryImpl @Inject constructor(
                 emit(Resource.Loading(false))
                 return@flow
             }
-
             val remoteListings = try {
                 val response = api.getListings()
                 companyListingsParser.parse(response.byteStream())

@@ -9,7 +9,7 @@ import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import com.ramcosta.composedestinations.DestinationsNavHost
 import dagger.hilt.android.AndroidEntryPoint
-import it.kimoterru.stockmarketviewerapp.presentation.company_listings.NavGraphs
+import it.kimoterru.stockmarketviewerapp.presentation.NavGraphs
 import it.kimoterru.stockmarketviewerapp.ui.theme.StockMarketViewerAppTheme
 
 @AndroidEntryPoint
